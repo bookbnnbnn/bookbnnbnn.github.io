@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shu-Cheng Zheng | Data Scientist & Researcher</title>
+  <title>Shu-Cheng Zheng | Data & AI Scientist</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -110,7 +110,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2.5rem;
-      align-items: center;
+      align-items: start;
       padding: 3rem;
       background: var(--surface);
       border-radius: 28px;
@@ -119,9 +119,10 @@
 
     .hero h1 {
       margin: 0 0 1rem;
-      font-size: clamp(2.4rem, 4vw, 3.2rem);
-      line-height: 1.15;
+      font-size: clamp(1.6rem, 4vw, 3.1rem);
+      line-height: 1.05;
       letter-spacing: -0.01em;
+      white-space: nowrap;
     }
 
     .hero p {
@@ -133,6 +134,17 @@
     .hero-summary {
       display: grid;
       gap: 1rem;
+    }
+
+    .hero-portrait {
+      width: clamp(160px, 26vw, 200px);
+      max-width: 100%;
+      height: auto;
+      border-radius: 24px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+      border: 4px solid rgba(255, 255, 255, 0.7);
+      object-fit: cover;
+      justify-self: start;
     }
 
     .hero-actions {
@@ -412,11 +424,14 @@
   <main>
     <section id="about" class="hero">
       <div class="hero-summary">
-        <h1>Data scientist and applied mathematics researcher.</h1>
+        <h1>Data and AI scientist</h1>
+        <img class="hero-portrait" src="documents/profile.JPG" alt="Portrait of Shu-Cheng Zheng">
         <p>
           I am Shu-Cheng Zheng, a data scientist trained in applied mathematics whose work spans weighted linear regression,
           empirical Bayesian modeling for protein structures, and applied machine learning projects across industry
-          competitions and research collaborations.
+          competitions and research collaborations. I build end-to-end AI systems from data strategy and model development to
+          deployment, including multimodal learning pipelines, explainable ML dashboards, and collaborative MLOps workflows
+          that move prototypes into production.
         </p>
         <div class="hero-actions">
           <a class="primary-button" href="#contact">Let’s collaborate</a>
