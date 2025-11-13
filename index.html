@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="purpleOrange">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,155 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --background: #f6f8fc;
+      --background: #f5f3ff;
       --surface: #ffffff;
-      --primary: #1c4ed8;
-      --accent: #f97316;
-      --text: #0f172a;
-      --muted: #475569;
+      --primary: #7c3aed;
+      --accent: #fb923c;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --background-gradient-1: rgba(124, 58, 237, 0.12);
+      --background-gradient-2: rgba(251, 146, 60, 0.12);
+      --header-background: rgba(245, 243, 255, 0.85);
+      --header-border: rgba(124, 58, 237, 0.18);
+      --surface-border: rgba(124, 58, 237, 0.08);
+      --surface-shadow: rgba(124, 58, 237, 0.12);
+      --card-shadow: rgba(124, 58, 237, 0.1);
+      --project-shadow: rgba(124, 58, 237, 0.09);
+      --skill-shadow: rgba(124, 58, 237, 0.1);
+      --meta-color: rgba(91, 33, 182, 0.6);
+      --primary-shadow: rgba(124, 58, 237, 0.28);
+      --primary-shadow-hover: rgba(124, 58, 237, 0.36);
+      --ghost-border: rgba(124, 58, 237, 0.38);
+      --ghost-background: rgba(124, 58, 237, 0.12);
+      --ghost-background-hover: rgba(124, 58, 237, 0.18);
+      --info-highlight: rgba(124, 58, 237, 0.14);
+      --chip-background: rgba(124, 58, 237, 0.12);
+      --chip-text: #7c3aed;
+      --image-border: rgba(255, 255, 255, 0.7);
+      --image-shadow: rgba(15, 23, 42, 0.18);
+      --footer-text: rgba(91, 33, 182, 0.6);
+      --contact-background: linear-gradient(140deg, rgba(124, 58, 237, 0.92), rgba(147, 51, 234, 0.88));
+      --contact-shadow: rgba(124, 58, 237, 0.35);
+      --contact-text: #ffffff;
+      --contact-subtext: rgba(255, 255, 255, 0.85);
+      --contact-border: rgba(255, 255, 255, 0.4);
+      --contact-hover: rgba(255, 255, 255, 0.14);
+      --contact-heading: #ffffff;
+      --contact-indicator: rgba(255, 255, 255, 0.95);
+    }
+
+    :root[data-theme="purpleOrange"] {
+      --background: #f5f3ff;
+      --surface: #ffffff;
+      --primary: #7c3aed;
+      --accent: #fb923c;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --background-gradient-1: rgba(124, 58, 237, 0.12);
+      --background-gradient-2: rgba(251, 146, 60, 0.12);
+      --header-background: rgba(245, 243, 255, 0.85);
+      --header-border: rgba(124, 58, 237, 0.18);
+      --surface-border: rgba(124, 58, 237, 0.08);
+      --surface-shadow: rgba(124, 58, 237, 0.12);
+      --card-shadow: rgba(124, 58, 237, 0.1);
+      --project-shadow: rgba(124, 58, 237, 0.09);
+      --skill-shadow: rgba(124, 58, 237, 0.1);
+      --meta-color: rgba(91, 33, 182, 0.6);
+      --primary-shadow: rgba(124, 58, 237, 0.28);
+      --primary-shadow-hover: rgba(124, 58, 237, 0.36);
+      --ghost-border: rgba(124, 58, 237, 0.38);
+      --ghost-background: rgba(124, 58, 237, 0.12);
+      --ghost-background-hover: rgba(124, 58, 237, 0.18);
+      --info-highlight: rgba(124, 58, 237, 0.14);
+      --chip-background: rgba(124, 58, 237, 0.12);
+      --chip-text: #7c3aed;
+      --image-border: rgba(255, 255, 255, 0.7);
+      --image-shadow: rgba(15, 23, 42, 0.18);
+      --footer-text: rgba(91, 33, 182, 0.6);
+      --contact-background: linear-gradient(140deg, rgba(124, 58, 237, 0.92), rgba(147, 51, 234, 0.88));
+      --contact-shadow: rgba(124, 58, 237, 0.35);
+      --contact-text: #ffffff;
+      --contact-subtext: rgba(255, 255, 255, 0.85);
+      --contact-border: rgba(255, 255, 255, 0.4);
+      --contact-hover: rgba(255, 255, 255, 0.14);
+      --contact-heading: #ffffff;
+      --contact-indicator: rgba(255, 255, 255, 0.95);
+    }
+
+    :root[data-theme="greenGray"] {
+      --background: #f3f4f6;
+      --surface: #ffffff;
+      --primary: #047857;
+      --accent: #4b5563;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --background-gradient-1: rgba(4, 120, 87, 0.1);
+      --background-gradient-2: rgba(75, 85, 99, 0.12);
+      --header-background: rgba(243, 244, 246, 0.85);
+      --header-border: rgba(15, 23, 42, 0.08);
+      --surface-border: rgba(15, 23, 42, 0.06);
+      --surface-shadow: rgba(4, 47, 46, 0.12);
+      --card-shadow: rgba(4, 47, 46, 0.08);
+      --project-shadow: rgba(4, 47, 46, 0.08);
+      --skill-shadow: rgba(4, 47, 46, 0.08);
+      --meta-color: rgba(55, 65, 81, 0.6);
+      --primary-shadow: rgba(4, 120, 87, 0.28);
+      --primary-shadow-hover: rgba(4, 120, 87, 0.34);
+      --ghost-border: rgba(4, 120, 87, 0.4);
+      --ghost-background: rgba(4, 120, 87, 0.1);
+      --ghost-background-hover: rgba(4, 120, 87, 0.16);
+      --info-highlight: rgba(4, 120, 87, 0.14);
+      --chip-background: rgba(4, 120, 87, 0.12);
+      --chip-text: #047857;
+      --image-border: rgba(255, 255, 255, 0.75);
+      --image-shadow: rgba(4, 47, 46, 0.18);
+      --footer-text: rgba(55, 65, 81, 0.65);
+      --contact-background: linear-gradient(140deg, rgba(6, 95, 70, 0.92), rgba(4, 120, 87, 0.88));
+      --contact-shadow: rgba(4, 120, 87, 0.3);
+      --contact-text: #ecfdf5;
+      --contact-subtext: rgba(236, 253, 245, 0.8);
+      --contact-border: rgba(236, 253, 245, 0.42);
+      --contact-hover: rgba(236, 253, 245, 0.14);
+      --contact-heading: #d1fae5;
+      --contact-indicator: rgba(16, 185, 129, 0.85);
+    }
+
+    :root[data-theme="dark"] {
+      --background: #0f172a;
+      --surface: #111827;
+      --primary: #38bdf8;
+      --accent: #f472b6;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --background-gradient-1: rgba(56, 189, 248, 0.22);
+      --background-gradient-2: rgba(244, 114, 182, 0.18);
+      --header-background: rgba(15, 23, 42, 0.82);
+      --header-border: rgba(148, 163, 184, 0.18);
+      --surface-border: rgba(148, 163, 184, 0.22);
+      --surface-shadow: rgba(8, 15, 32, 0.6);
+      --card-shadow: rgba(8, 15, 32, 0.55);
+      --project-shadow: rgba(8, 15, 32, 0.5);
+      --skill-shadow: rgba(8, 15, 32, 0.5);
+      --meta-color: rgba(148, 163, 184, 0.75);
+      --primary-shadow: rgba(56, 189, 248, 0.35);
+      --primary-shadow-hover: rgba(56, 189, 248, 0.45);
+      --ghost-border: rgba(56, 189, 248, 0.4);
+      --ghost-background: rgba(56, 189, 248, 0.14);
+      --ghost-background-hover: rgba(56, 189, 248, 0.24);
+      --info-highlight: rgba(56, 189, 248, 0.22);
+      --chip-background: rgba(56, 189, 248, 0.2);
+      --chip-text: #38bdf8;
+      --image-border: rgba(148, 163, 184, 0.35);
+      --image-shadow: rgba(8, 15, 32, 0.6);
+      --footer-text: rgba(148, 163, 184, 0.75);
+      --contact-background: linear-gradient(140deg, rgba(15, 23, 42, 0.92), rgba(30, 41, 59, 0.9));
+      --contact-shadow: rgba(8, 15, 32, 0.65);
+      --contact-text: #e2e8f0;
+      --contact-subtext: rgba(226, 232, 240, 0.78);
+      --contact-border: rgba(148, 163, 184, 0.42);
+      --contact-hover: rgba(148, 163, 184, 0.22);
+      --contact-heading: #f8fafc;
+      --contact-indicator: rgba(56, 189, 248, 0.82);
     }
 
     *, *::before, *::after {
@@ -25,10 +168,11 @@
       margin: 0;
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       color: var(--text);
-      background: radial-gradient(circle at top left, rgba(28, 78, 216, 0.08), transparent 55%),
-        radial-gradient(circle at bottom right, rgba(249, 115, 22, 0.08), transparent 50%),
+      background: radial-gradient(circle at top left, var(--background-gradient-1), transparent 55%),
+        radial-gradient(circle at bottom right, var(--background-gradient-2), transparent 50%),
         var(--background);
       line-height: 1.6;
+      transition: background 0.35s ease, color 0.35s ease;
     }
 
     a {
@@ -40,8 +184,9 @@
       top: 0;
       z-index: 100;
       backdrop-filter: blur(16px);
-      background: rgba(246, 248, 252, 0.85);
-      border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+      background: var(--header-background);
+      border-bottom: 1px solid var(--header-border);
+      transition: background 0.35s ease, border-color 0.35s ease;
     }
 
     nav {
@@ -76,6 +221,45 @@
 
     .nav-links a:hover {
       color: var(--primary);
+    }
+
+    .theme-switcher {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .theme-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .theme-option {
+      border: 1px solid var(--ghost-border);
+      background: var(--ghost-background);
+      color: var(--primary);
+      border-radius: 999px;
+      padding: 0.45rem 0.9rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .theme-option:hover {
+      background: var(--ghost-background-hover);
+      transform: translateY(-1px);
+    }
+
+    .theme-option[aria-pressed="true"] {
+      background: var(--primary);
+      color: #fff;
+      border-color: transparent;
+      box-shadow: 0 10px 20px var(--primary-shadow);
     }
 
     main {
@@ -114,7 +298,9 @@
       padding: 3rem;
       background: var(--surface);
       border-radius: 28px;
-      box-shadow: 0 30px 70px rgba(15, 23, 42, 0.07);
+      box-shadow: 0 30px 70px var(--surface-shadow);
+      border: 1px solid var(--surface-border);
+      transition: background 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
     }
 
     .hero h1 {
@@ -141,10 +327,11 @@
       max-width: 100%;
       height: auto;
       border-radius: 24px;
-      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
-      border: 4px solid rgba(255, 255, 255, 0.7);
+      box-shadow: 0 18px 40px var(--image-shadow);
+      border: 4px solid var(--image-border);
       object-fit: cover;
       justify-self: start;
+      transition: box-shadow 0.35s ease, border-color 0.35s ease;
     }
 
     .hero-actions {
@@ -168,23 +355,23 @@
     .primary-button {
       background: var(--primary);
       color: #fff;
-      box-shadow: 0 18px 35px rgba(28, 78, 216, 0.25);
+      box-shadow: 0 18px 35px var(--primary-shadow);
     }
 
     .primary-button:hover {
       transform: translateY(-2px);
-      box-shadow: 0 20px 40px rgba(28, 78, 216, 0.3);
+      box-shadow: 0 20px 40px var(--primary-shadow-hover);
     }
 
     .ghost-button {
       color: var(--primary);
-      border: 1px solid rgba(28, 78, 216, 0.4);
-      background: rgba(28, 78, 216, 0.08);
+      border: 1px solid var(--ghost-border);
+      background: var(--ghost-background);
     }
 
     .ghost-button:hover {
       transform: translateY(-2px);
-      background: rgba(28, 78, 216, 0.12);
+      background: var(--ghost-background-hover);
     }
 
     .info-list {
@@ -200,8 +387,9 @@
       flex-direction: column;
       padding: 1rem 1.25rem;
       border-radius: 18px;
-      background: linear-gradient(135deg, rgba(28, 78, 216, 0.06), transparent 65%);
-      border: 1px solid rgba(15, 23, 42, 0.04);
+      background: linear-gradient(135deg, var(--info-highlight), transparent 65%);
+      border: 1px solid var(--surface-border);
+      transition: background 0.35s ease, border-color 0.35s ease;
     }
 
     .info-label {
@@ -225,10 +413,11 @@
       background: var(--surface);
       border-radius: 22px;
       padding: 2rem;
-      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.07);
-      border: 1px solid rgba(15, 23, 42, 0.05);
+      box-shadow: 0 20px 50px var(--card-shadow);
+      border: 1px solid var(--surface-border);
       display: grid;
       gap: 1rem;
+      transition: background 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
     }
 
     .card-header {
@@ -251,7 +440,7 @@
       font-size: 0.85rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: rgba(15, 23, 42, 0.6);
+      color: var(--meta-color);
       font-weight: 600;
     }
 
@@ -277,10 +466,11 @@
       background: var(--surface);
       border-radius: 20px;
       padding: 1.75rem;
-      border: 1px solid rgba(15, 23, 42, 0.05);
-      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+      border: 1px solid var(--surface-border);
+      box-shadow: 0 18px 40px var(--project-shadow);
       display: grid;
       gap: 0.75rem;
+      transition: background 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
     }
 
     .project-card h3 {
@@ -298,7 +488,7 @@
       font-size: 0.8rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: rgba(15, 23, 42, 0.6);
+      color: var(--meta-color);
       font-weight: 600;
     }
 
@@ -312,10 +502,11 @@
       background: var(--surface);
       border-radius: 20px;
       padding: 1.5rem;
-      border: 1px solid rgba(15, 23, 42, 0.05);
-      box-shadow: 0 15px 38px rgba(15, 23, 42, 0.05);
+      border: 1px solid var(--surface-border);
+      box-shadow: 0 15px 38px var(--skill-shadow);
       display: grid;
       gap: 0.75rem;
+      transition: background 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
     }
 
     .skill-group h3 {
@@ -334,25 +525,35 @@
     .chip {
       padding: 0.45rem 0.9rem;
       border-radius: 999px;
-      background: rgba(28, 78, 216, 0.1);
-      color: var(--primary);
+      background: var(--chip-background);
+      color: var(--chip-text);
       font-weight: 500;
       font-size: 0.9rem;
+      transition: background 0.35s ease, color 0.35s ease;
     }
 
     .contact {
-      background: linear-gradient(140deg, rgba(28, 78, 216, 0.9), rgba(99, 102, 241, 0.9));
-      color: #fff;
+      background: var(--contact-background);
+      color: var(--contact-text);
       border-radius: 26px;
       padding: 2.75rem;
-      box-shadow: 0 30px 60px rgba(28, 78, 216, 0.28);
+      box-shadow: 0 30px 60px var(--contact-shadow);
       display: grid;
       gap: 1.2rem;
+      transition: background 0.35s ease, box-shadow 0.35s ease, color 0.35s ease;
+    }
+
+    .contact .section-title {
+      color: var(--contact-heading);
+    }
+
+    .contact .section-title::before {
+      background: var(--contact-indicator);
     }
 
     .contact p {
       margin: 0;
-      color: rgba(255, 255, 255, 0.85);
+      color: var(--contact-subtext);
     }
 
     .contact-links {
@@ -367,15 +568,15 @@
       gap: 0.5rem;
       padding: 0.7rem 1.2rem;
       border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      color: #fff;
+      border: 1px solid var(--contact-border);
+      color: var(--contact-text);
       text-decoration: none;
       font-weight: 600;
       transition: background 0.2s ease, transform 0.2s ease;
     }
 
     .contact-links a:hover {
-      background: rgba(255, 255, 255, 0.14);
+      background: var(--contact-hover);
       transform: translateY(-2px);
     }
 
@@ -383,18 +584,24 @@
       margin-top: 4rem;
       padding: 2.5rem 1rem 3rem;
       text-align: center;
-      color: rgba(15, 23, 42, 0.55);
+      color: var(--footer-text);
       font-size: 0.9rem;
+      transition: color 0.35s ease;
     }
 
     @media (max-width: 720px) {
       nav {
         flex-direction: column;
         align-items: flex-start;
+        gap: 0.75rem;
       }
 
       .nav-links {
         flex-wrap: wrap;
+      }
+
+      .theme-switcher {
+        width: 100%;
       }
 
       main {
@@ -418,6 +625,12 @@
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
+      </div>
+      <div class="theme-switcher" role="radiogroup" aria-label="Theme selector">
+        <span class="theme-label">Theme</span>
+        <button class="theme-option" type="button" data-theme-option="purpleOrange" aria-pressed="false">Purple &amp; Orange</button>
+        <button class="theme-option" type="button" data-theme-option="greenGray" aria-pressed="false">Green &amp; Gray</button>
+        <button class="theme-option" type="button" data-theme-option="dark" aria-pressed="false">Dark Mode</button>
       </div>
     </nav>
   </header>
@@ -586,7 +799,7 @@
     </section>
 
     <section id="contact" class="contact">
-      <h2 class="section-title" style="color: #fff;">Let’s build something impactful</h2>
+      <h2 class="section-title">Let’s build something impactful</h2>
       <p>
         I am eager to collaborate on data-driven products, research initiatives, and analytics workflows that require a blend of
         mathematical rigor and practical execution. Reach out to discuss how we can work together.
@@ -602,5 +815,45 @@
   <footer>
     © 2024 Shu-Cheng Zheng. Crafted with curiosity and data-driven passion.
   </footer>
+  <script>
+    (function () {
+      const themeButtons = document.querySelectorAll('[data-theme-option]');
+      const storageKey = 'preferred-theme';
+      const defaultTheme = 'purpleOrange';
+      const availableThemes = new Set(Array.from(themeButtons, (button) => button.dataset.themeOption));
+
+      const applyTheme = (theme) => {
+        document.documentElement.dataset.theme = theme;
+        themeButtons.forEach((button) => {
+          const isActive = button.dataset.themeOption === theme;
+          button.setAttribute('aria-pressed', isActive);
+        });
+        try {
+          localStorage.setItem(storageKey, theme);
+        } catch (error) {
+          /* ignore storage errors */
+        }
+      };
+
+      let storedTheme = null;
+      try {
+        storedTheme = localStorage.getItem(storageKey);
+      } catch (error) {
+        storedTheme = null;
+      }
+
+      const initialTheme = availableThemes.has(storedTheme) ? storedTheme : defaultTheme;
+      applyTheme(initialTheme);
+
+      themeButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const nextTheme = button.dataset.themeOption;
+          if (availableThemes.has(nextTheme)) {
+            applyTheme(nextTheme);
+          }
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
